@@ -2,7 +2,7 @@
 An Android application to detect screen recording or screen sharing, ensuring user privacy and security.  
 
 ## Overview
-The __Screen-Recording-Detection-App__ is a powerful android screen recording detection tool that can detect when this app's screen is being recorded or shared, offering an extra layer of security for sensitive operations. 
+The Screen-Recording-Detection-App is a powerful android screen recording detection tool that can detect when app's screen is being recorded or shared, offering an extra layer of security for sensitive operations. 
 This open-source Android app provides real-time detection by triggering a callback whenever the app becomes visible to a screen recorder or sharing tool. It is especially useful for developers working in industries where data privacy is critical, such as banking, healthcare, and enterprise applications.
 
 ## Key Features
