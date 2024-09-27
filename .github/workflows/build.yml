@@ -1,0 +1,45 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - main  # Change this if you want to build on a different branch
+  pull_request:
+    branches:
+      - main  # Change this if you want to build on pull requests to this branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'  # You can change this to the version your project uses
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Extract version code
+        id: get_version
+        run: |
+          # Extract version code from build.gradle.kts
+          VERSION_CODE=$(grep "versionCode" app/build.gradle.kts | awk '{print $2}')
+          echo "VERSION_CODE=${VERSION_CODE}" >> $GITHUB_ENV
+
+      - name: Move APK to Root Directory and Rename APK
+        run: |
+          mv app/build/outputs/apk/debug/app-debug.apk app-debug-v${{ env.VERSION_CODE }}.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: debug-apk
+          path: app-debug-v${{ env.VERSION_CODE }}.apk
