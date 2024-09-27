@@ -39,7 +39,7 @@ jobs:
           mv app/build/outputs/apk/debug/app-debug.apk app-debug-v${{ env.VERSION_CODE }}.apk
 
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: debug-apk
           path: app-debug-v${{ env.VERSION_CODE }}.apk
