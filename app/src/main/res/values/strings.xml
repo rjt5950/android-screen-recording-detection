@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SRDTest</string>
+    <string name="screen_recording_status">Current Recording Status</string>
+    <string name="display_app_info_message">This application detects when the app screen is being recorded/shared.</string>
+</resources>
