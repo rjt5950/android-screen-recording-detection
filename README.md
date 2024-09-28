@@ -42,7 +42,7 @@ You can download the APK file for quick testing. To install the app, use the fol
 ## Screenshots
 | Screen Recording Detected           | Not Recording                       | Toast Notification                          |
 | ----------------------------------- | ----------------------------------- | ------------------------------------------- |
-| <img src="https://media.github.sec.samsung.net/user/83641/files/107d6830-2416-41d1-ab10-df5b7ad2ae00" width="220" height="auto" /> | <img src="https://media.github.sec.samsung.net/user/83641/files/57eb53bd-a0a1-4eeb-86f6-9585aeec60d4" width="220" height="auto" /> | <img src="https://media.github.sec.samsung.net/user/83641/files/472498bb-b8db-4b27-900e-f4405e40e1ea" width="220" height="auto" /> |
+| <img src="https://github.com/user-attachments/assets/2227b89b-fd52-4d97-b3c1-c7176e5845a1" width="220" height="auto" /> | <img src="https://github.com/user-attachments/assets/092e9fe2-bce7-4854-97e2-ab35f6f8fe72" width="220" height="auto" /> | <img src="https://github.com/user-attachments/assets/5df6fa08-6dac-4486-9f93-be3081bfa138" width="220" height="auto" /> |
 
 
 ## Technical Specifications
