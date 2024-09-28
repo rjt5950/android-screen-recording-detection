@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu 23.04
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true 
 
